@@ -1,8 +1,8 @@
 use rand::{rngs::StdRng, Rng, SeedableRng};
 
-type Gene = f64;
-type Individual = Vec<Gene>;
-type Evaluation = Vec<f64>;
+pub type Gene = f64;
+pub type Individual = Vec<Gene>;
+pub type Evaluation = Vec<f64>;
 
 #[derive(Debug)]
 pub struct EAServer {

@@ -13,7 +13,7 @@ fn main() {
     for _ in 0..epoch {
         for i in 0..indi_num {
             let indi = ea_server.de_rand_x_bin(i, vector_num, f_scale, own_ratio);
-            let eval = vec![indi.iter().map(|&x| -(0.5-x).powi(2)).sum::<f64>()];
+            let eval = vec![indi.iter().map(|&x| -(0.5 - x).powi(2)).sum::<f64>()];
             ea_server.may_update(i, indi, eval);
         }
     }
